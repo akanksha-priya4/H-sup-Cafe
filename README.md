@@ -44,3 +44,5 @@ The landing page is designed to be compatible with the following browsers:
 @Known Issues: None at this time
 
 I hope this helps.
+
+![Full Project Snap]([https://drive.google.com/uc?id=<YOUR_IMAGE_ID>](https://drive.google.com/file/d/195Q6hpw5ATGiSo0M2iKEavpuu8t5N26l/view?usp=drive_link))
