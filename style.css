@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+}
+/*------------------------Header--------------------------*/
+#landing-page {
+  height: 100vh;
+  background: url("5457d6f06d43a0caac1448ea8ee36cba.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+#nav-bar-header {
+  position: fixed;
+  width: 100%;
+  padding: 1em 1em 0em 1em;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(rgb(255, 208, 53), rgb(253, 235, 157));
+}
+#nav-bar-header.color ul {
+  background: rgb(203, 162, 29);
+}
+.ul-list {
+  display: flex;
+  gap: 2em;
+  list-style-type: none;
+  font-size: 18px;
+}
+li a {
+  text-decoration: none;
+  color: rgb(32, 32, 32);
+  font-weight: 700;
+  position: relative;
+}
+.ul-list li {
+  display: inline-block;
+}
+ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #161515;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+ul li a:hover::after {
+  width: 100%;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+}
+.logo span {
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(178, 123, 5);
+}
+/*------------------------intro-----------------------------*/
+.intro {
+  padding-top: 22%;
+  text-align: center;
+  color: #ffffff;
+}
+.intro h1 {
+  font-size: 45px;
+}
+.intro p {
+  font-size: 20px;
+}
+/*------------------------about-----------------------------*/
+.about-page {
+  padding: 30px 0 0 10px;
+  height: 85vh;
+  background-color: rgb(255, 251, 231);
+  overflow: hidden;
+  text-align: center;
+}
+.about-page h1 {
+  padding: 1em;
+  color: rgb(148, 110, 5);
+}
+.aboutbody {
+  padding: 0em 5em 0em 5em;
+}
+.aboutbody img {
+  border-radius: 50%;
+}
+.aboutbody p {
+  padding: 2em 1em;
+  font-size: 18px;
+  color: rgb(65, 49, 3);
+  font-family: "Crimson Text", serif;
+}
+/*------------------------menu-------------------------*/
+.menu-eatable-drinks {
+  height: 100vh;
+  padding: 2em 3em 1em 3em;
+  background: url("menu-dessert-safeimagekit.jpeg");
+}
+.menu-eatable-drinks h1 {
+  text-align: center;
+  padding: 1.2em;
+  color: rgb(36, 36, 35);
+}
+.menu-list-ul {
+  display: flex;
+  justify-content: space-between;
+}
+ul li {
+  list-style-type: none;
+}
+.st,
+.nd,
+.rd {
+  padding: 1em;
+}
+.drink,
+.pasta,
+.dessert {
+  padding-bottom: 2em;
+  font-size: 30px;
+  color: rgb(44, 41, 34);
+}
+.d,
+.p,
+.de {
+  font-size: 24px;
+  color: rgb(11, 11, 11);
+}
+.infosmenu {
+  font-size: 20px;
+  padding-bottom: 1em;
+  color: rgb(34, 31, 25);
+}
+/*-----------------------review----------------------*/
+#review {
+  text-align: center;
+}
+.head-rev {
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 0 0;
+}
+.head-rev span {
+  padding-left: 10px;
+  font-size: 22px;
+}
+.head-rev .com {
+  color: darkgoldenrod;
+  font-size: 12px;
+  font-weight: 800;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 80px;
+  padding: 50px 100px;
+  transition: background 1s, transform 1s;
+}
+.rev {
+  background: linear-gradient(rgb(249, 242, 200), rgb(251, 250, 230));
+  padding: 50px 50px;
+  height: 400px;
+  border-radius: 30px;
+}
+.rev:hover {
+  transform: translateY(10px);
+  background: linear-gradient(rgb(254, 244, 186), rgb(252, 250, 209));
+}
+.rev p span {
+  color: rgb(77, 76, 76);
+  font-size: 19px;
+}
+.rev p {
+  align-self: justify;
+  justify-self: justify;
+  font-size: 15px;
+  font-family: "Kanit", sans-serif;
+}
+.rev img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+  border: solid 1px;
+  background: rgb(222, 221, 221);
+}
+
+/*-----------------------footer----------------------*/
+footer {
+  background: rgb(252, 241, 210);
+  padding: 4% 7% 4% 7%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: rgb(82, 64, 26);
+}
+.contactfooter {
+  flex-basis: 25%;
+  padding: 2% 0 0 0;
+}
+.aboutfooter {
+  flex-basis: 65%;
+}
+footer h6 {
+  font-size: 22px;
+}
+.foot {
+  height: 28px;
+  font-size: 20px;
+  color: rgb(53, 52, 52);
+  text-align: center;
+  background: rgb(234, 217, 160);
+}
+.icons {
+  font-size: 25px;
+  padding-top: 20px;
+  letter-spacing: 10px;
+}
+.icons i {
+  transition: transform 0.3s;
+}
+.icons i:hover {
+  transform: translateY(-5px);
+}
+
+/*
+#landing-page{
+    background-image: url("cffee.jpg");
+    opacity: 0.9;
+    width: 100%;
+    height: 100vh;
+}
+.logo{
+    font-family: 'Dancing Script', cursive;
+    color: blanchedalmond;
+    margin-left: 60px;
+    font-size: 37px;
+    font-weight: 900;
+}
+.nav-bar-ul-list{
+    top: 0;
+    float: right;
+}
+.ul-list{
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: antiquewhite;
+    font-weight: 700;
+    display: inline-flex;
+    gap: 5em;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(242, 175, 86);
+}
+
+.intro{
+    text-align: center;
+    margin-top: 230px;
+}
+
+.head{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    color: azure;
+}
+.pre{
+    font-family: 'Crimson Text', serif;
+    color: cornsilk;
+    font-size: 25px;
+}
+#downward-arrow{
+    margin-top: 230px;
+    font-size: 50px;
+    color: white;
+}
+#downward-arrow:hover{
+    cursor: pointer;
+}
+#downward-arrow:visited{
+    color: aquamarine;
+}
+.material-symbols-outlined{
+    color: wheat;
+}
+.about-page{
+    background-color: rgb(255, 221, 135);
+    height: 100vh;
+}
+.h-about{
+    text-align: center;
+    font-size: 60px;
+    color: rgb(205, 121, 4);
+}
+.aboutbody{
+    margin-top: 80px;
+    display: flex;
+    gap: 90px;
+}
+.about-para{
+    margin-left: 150px;
+    padding: 40px;
+    font-size: 30px;
+    box-sizing: border-box;
+    color: rgb(149, 70, 5);
+}
+.img-about-body{
+    margin-right: 190px;
+    padding: 40px;
+    width: 100%;
+    height: 400px;
+    outline-style: solid;
+    outline-color: darkgoldenrod;
+}
+.menu-eatable-drinks{
+    background-color: rgb(234, 198, 107);
+    height: 100vh;
+}
+.menu-headin{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 80px;
+    color: rgb(180, 126, 18);
+}
+.menu-list-ul{
+    display: flex;
+    gap: 10em;
+    font-size: 35px;
+}
+.drink{
+    margin-left: 30px;
+}
+.drink,.pasta,.dessert{
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: rgb(152, 54, 28);
+}
+.d{
+    margin-left: 30px;
+}
+.infosmenu{
+    color: rgb(75, 25, 3);
+    margin-left: 150px;
+    font-size: 25px;
+}
+*/
